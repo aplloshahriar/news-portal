@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Image from "next/image";
-import logo from "@/assets/logo.png";
+
 import { IconButton, Stack } from "@mui/material";
 
 // icons
@@ -48,7 +48,10 @@ function Navbar() {
       <AppBar position="static" className="bg-black">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Image src={logo} width={100} height={100} alt="logo" />
+           
+            <h2 className="text-xl">
+            PulseNews
+            </h2>
 
             <Box className="w-full text-center">
               {navItems.map((item) => (
